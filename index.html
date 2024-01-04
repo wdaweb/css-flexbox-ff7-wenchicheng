@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      /* 寫最前面 */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      letter-spacing: 1px;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Noto Sans TC regular', sans-serif;
+    }
+
+    #box {
+      width: 100%;
+      height: 100%;
+      background-image: url(./images/bg-full.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* 背景等比例隨視窗縮放 (有點類似響應式?) */
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      filter: blur(20px);
+      /* backdrop-filter: blur(5px); */
+      position: fixed;
+      filter: brightness(0.5);
+    }
+
+    #content {
+      outline: 0.5px solid #797979;
+      width: 1400px;
+      height: 700px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .now {
+      /* filter: brightness(0.5); */
+      float: left;
+      height: 700px;
+      width: 700px;
+      /* background: url(./images/main.jpg) no-repeat center/cover; */
+    }
+
+    .now::before {
+      content: "";
+      filter: brightness(0.5);
+      float: left;
+      height: 700px;
+      width: 700px;
+      background: url(./images/main.jpg) no-repeat center/cover;
+    }
+
+    .right {
+      float: right;
+      height: 700px;
+      width: 700px;
+    }
+
+
+
+    .ps4 {
+      width: 580px;
+      height: 360px;
+      position: fixed;
+      left: 60px;
+      top: 60px;
+      /* background-color: #797979; */
+      text-align: center;
+    }
+
+    .ps4 img {
+      width: 240px;
+    }
+
+    .text {
+      /* background-color: aqua; */
+      width: 580px;
+      height: 220px;
+      position: fixed;
+      left: 60px;
+      top: 420px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 32px;
+    }
+
+    .white {
+      color: #fff;
+    }
+
+    .black {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 64px;
+      font-weight: 900;
+    }
+
+    .cloud {
+      height: 350px;
+      width: 700px;
+      background-color: #ccc;
+      position: relative;
+    }
+
+    .tifa {
+      height: 350px;
+      width: 700px;
+      background-color: black;
+      position: relative;
+      background-image: url(./images/tifa.png);
+      background-repeat: no-repeat;
+      background-size: 250px auto;
+      background-position: left bottom;
+    }
+
+    .cloud img {
+      width: 270px;
+      position: absolute;
+      /* transform: translate(-100%,-100%); */
+      top: 13%;
+      right: 0%;
+
+    }
+
+    .cloud-text {
+      height: 350px;
+      width: 700px;
+      padding: 80px 200px 100px 40px;
+      position: absolute;
+
+    }
+
+    .tifa img {
+      width: 270px;
+      position: fixed;
+      /* transform: translate(-100%,-100%); */
+      top: 57%;
+      left: 52%;
+    }
+
+    .tifa-text {
+      height: 350px;
+      width: 700px;
+      padding: 80px 40px 100px 200px;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+  <div id="content">
+    <div class="now">
+      <div class="ps4">
+        <img src="./images/ps4-ff7.png" alt="">
+      </div>
+      <div class="text white">
+        <h1>AVAILABLE NOW</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consequuntur harum? Cupiditate delectus amet
+        quae aperiam beatae, totam dolores laudantium.
+      </div>
+    </div>
+    <div class="right">
+      <div class="cloud">
+        <div class="black cloud-text">
+          <h1>Cloud</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisici
+            <br>
+            elit.consectetur adipisicing elit.consectetur adipis
+            <br>
+            consectetur adipisicing elit.consectetur adipisicin5
+            <br>
+            consectetur adipisicing elit.consectetur adipisicing
+            <br>
+            consectetur adipisicing elit.
+          </p>
+
+        </div>
+        <img src="./images/cloud.png" alt="">
+      </div>
+      <div class="tifa">
+        <div class="white tifa-text">
+          <!-- <img src="./images/tifa.png"> -->
+          <h1>Tifa</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisici
+            <br>
+            elit.consectetur adipisicing elit.consectetur adipis
+            <br>
+            consectetur adipisicing elit.consectetur adipisicin5
+            <br>
+            consectetur adipisicing elit.consectetur adipisicing
+            <br>
+            consectetur adipisicing elit.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
