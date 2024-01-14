@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/R5DTMKNE)
+# FinalFantacy_FlexboxPage
+
+![ff7](./images/ff7.jpg "ff7")
+
+![chinese_chess](./images/chinese_chess.png "chinese_chess")
